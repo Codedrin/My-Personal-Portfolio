@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins',sans-serif;
+}
+
+
+a.blog-link {
+  color: white;
+  letter-spacing: 4px;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease-out 0.1s, transform 0.2s ease-out; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+a.blog-link:hover {
+  background-color: rgba(17, 124, 255, 0.31); /* Light blue color on hover */
+  color: white; /* Ensure text remains white */
+}
+
+a.blog-link:active {
+  background-color: rgba(17, 124, 255, 0.5); /* Slightly darker blue on click */
+  transform: scale(0.98); /* Slight "press" effect */
+}
+
+/* menu item */
+
+.menu-item{
+  color: white;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 100px;
+  transition: background-color 0.3s ease-out 0.1s; 
+  text-decoration: none; 
+  display: inline-block; 
+}
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.31); 
+  color: white;
+}
+/* drin_logo modification */
+img.drin-logo{
+  filter: brightness(0) invert(1);
+}
+
+/* Navlink style */
+
+.side-bar-navlinks {
+  right: 0;
+  position: fixed;
+  width: 100%; /* Ensure full width */
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+a.global-style-navlink {
+  display: block;
+  color: white;
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-out, transform 0.2s ease-out;
+}
+
+a.global-style-navlink:hover {
+  background-color: rgba(255, 255, 255, 0.31);
+  color: white;
+}
+
+a.global-style-navlink:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.98);
+}
